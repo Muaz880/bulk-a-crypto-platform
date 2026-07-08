@@ -1,0 +1,617 @@
+body {
+  background-color: #121F36;
+  margin: 0;
+  font-family: 'Gemunu Libre'; /* Applying the specified font-family */
+  overflow-y: auto; /* Vertical scroll */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+
+#kernal{
+  background-color:#121F36; 
+
+}
+.container {
+  position: relative;
+ 
+}
+.stylishcircle { 
+  position: absolute; 
+  top: -52px; 
+  left: -39px; 
+  width: 120px;
+  opacity: 1;
+  filter: brightness(1.5); 
+  height: 120px; 
+  color: green;
+  z-index: 1; 
+  object-fit: cover; /* Ensures the image covers the area without distortion */ 
+  
+}
+
+
+#L1, #L2, #L3 {
+  margin-top: 5px;
+  font-family: 'Gemunu Libre'; 
+}
+
+
+
+#hel {
+  color: white;
+}
+
+.radius {
+  border-radius: 10px;
+  background-color: #383c68;
+  color: white;
+  font-family: 'Gemunu Libre'; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #121F36;
+  color: white;
+
+  
+ background: none !important;
+ pointer-events: auto !important;
+ position: relative;
+ z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 17px;
+  position: relative;
+  z-index: 3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position:relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+  z-index: 2;
+  padding: 20px;
+  gap: 15px; /* Add gap between the left and right controls */
+}
+
+.controls .left, .controls .right {
+  display: flex;
+  gap: 13px; /* Add gap between elements within each section */
+}
+
+.controls .left {
+  margin-left: 25px;
+}
+
+.controls .right {
+  margin-right: 25px;
+}
+
+select, input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #383c68;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.side1{
+position: absolute;
+right: -46px;
+top: -30%;
+z-index: 1;
+max-width: 100%;
+}
+
+.side2{
+  position: absolute;
+  left: 0;
+  top: -15%;
+  z-index: 1;
+  max-width: 100%;
+  }
+
+/*form css \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.websitecenter{
+
+position: relative;
+left: 8%;
+
+z-index: 2;
+
+
+
+}
+
+.webcen{
+
+margin-left: 8%;
+margin-top: 8%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.big-box {
+  font-family: 'Gemunu Libre', sans-serif;
+  background-color: #054F78;
+  padding: 20px;
+ 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 83%;
+  color: white;
+}
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 13px;
+}
+.form-left {
+  width: 43%;
+  margin-left: 40px;
+}
+.form-left label {
+  font-family: 'Gemunu Libre';
+  font-size: 13px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+.form-left input[type="text"] {
+  display: block;
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #377293;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Gemunu Libre';
+  font-size: 12px;
+  font-weight: 700;
+}
+.form-left input[type="text"]::placeholder {
+  color: white;
+}
+.form-left input[type="text"]:hover {
+  border: 2px solid #098ADD;
+}
+.form-right {
+  width: 34%;
+  position: relative;
+}
+.form-right .link-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.form-right .link-box .number-box {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #377293;
+  margin-right: 10px;
+  z-index: 2;
+}
+.form-right .link-box .number-box.active {
+  background: linear-gradient(180deg, #098ADD 0%, #04D2C0 100%);
+}
+.form-right .link-box .number-box:hover {
+  background: linear-gradient(180deg, #098ADD 0%, #04D2C0 100%);
+}
+.form-right .link-box .link-text {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+.form-right .link-box .link-text.active {
+  font-size: 20px;
+  font-weight: 700;
+  color:#04D2C0;
+}
+.link-text:hover{
+text-decoration: underline;
+
+
+}
+
+.vertical-line {
+  position: absolute;
+  left: 15px;
+  top: -33px;
+  width: 15px;
+  height: calc(100% - -54px);
+  z-index: 1;
+  border-left: 2px dashed;
+  border-image-source: linear-gradient(180deg, #098ADD 0%, #04D1C0 100%);
+  border-image-slice: 1;
+}
+
+
+
+
+.lower-part {
+  margin-top: 20px;
+}
+.horizontal-line {
+  margin-left: -20px;
+  width: 104%;
+  border-top: 2px solid #098ADD;
+  margin-bottom: 20px;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-nav .back {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backback{
+  
+  background: linear-gradient(135deg, #0987DE, #04DBBD); /* Linear gradient background */
+  color: white; 
+  padding: 12px 23px;
+  font-size: 14px;
+  
+  font-weight: 700;
+  border: 1px solid #4493cb;
+  cursor: pointer;
+  clip-path: polygon(26% 0, 80% 0%, 100% 0, 100% 58%, 75% 100%, 0 99%, 0 32%);
+  transition: background-color 0.3s;
+}
+
+.backback:hover{
+
+  background-color: #005f73;
+  border: 5px solid;
+  text-decoration: underline;
+  border-image: linear-gradient(90deg, #098BDC 3.8%, #04D2C1 100%);
+
+}
+
+.next {
+
+  background: linear-gradient(135deg, #0987DE, #04DBBD); /* Linear gradient background */
+  color: white; 
+  padding: 12px 23px;
+  font-size: 14px;
+  
+  font-weight: 700;
+  border: 1px solid #4493cb;
+  cursor: pointer;
+  clip-path: polygon(26% 0, 80% 0%, 100% 0, 100% 58%, 75% 100%, 0 99%, 0 32%);
+  transition: background-color 0.3s;
+}
+.next:hover{
+
+  background-color: #005f73;
+  text-decoration: underline;
+
+}
+.big-box:hover {
+  border: 2px solid #4493cb;
+
+}
+
+
+
+
+
+
+
+
+/* lower part css\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+
+   /* footer diaognal shape bar for social\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/ 
+  .ltft { 
+  margin: 0 39%; 
+  font-family: Arial, sans-serif;
+  position:relative ; 
+  z-index: 3;
+  }
+  
+  .shapess {
+    clip-path: polygon(12% 21%, 86% 22%, 100% 100%, 0 100%); 
+    background: linear-gradient(90.22deg, #098ADD 0.21%, #04D7BF 99.84%); 
+    width: 300px; /* Adjust the width as needed */ 
+    height: 100px; /* Adjust the height as needed */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: background-color 0.3s;
+   }
+   .shapess:hover{
+     background-color: #005f73;
+     border: 5px solid white;
+     border-image: linear-gradient(90deg, #098BDC 3.8%, #04D2C1 100%);
+   }
+  
+  .iconss {
+   display: flex; 
+   gap: 20px; 
+  } 
+  .icon { width: 24px; /* Adjust the icon size as needed */ 
+  height: 24px; /* Adjust the icon size as needed */ 
+  background-size: cover;
+   }
+  
+   .icon.linkedin { 
+  background-image: url('Linkdin.png'); /* Replace with the correct path */ 
+  } 
+  
+  .icon.telegram {
+   background-image: url('telegram.png'); /* Replace with the correct path */
+   }
+  
+   .icon.facebook { 
+  background-image: url('facebook.png'); /* Replace with the correct path */ 
+  }
+  
+   .icon.twitter { 
+  background-image: url('twitter.png'); /* Replace with the correct path */ 
+  }
+  
+   .follows{ 
+  display: block; 
+  margin-left: 48%; 
+  margin-top: 10%; 
+  font-size: larger; 
+  font-weight: 700; 
+  color: white; 
+  position: relative;
+  z-index: 2;
+  } 
+  /* fotoor content\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */ 
+  
+
+  
+  
+  .lastlast { 
+    background-color: #121F36; 
+  margin: 0; 
+  font-family: 'Gemunu Libre'; 
+  min-height: 20%;
+  position: relative;
+  z-index: 2;
+  margin-top: 200px;
+   } 
+  
+  .footer { 
+     background: #00375B; 
+     color: white; 
+     padding: 20px 0; 
+     text-align: center; 
+     width: 100%;
+     height: 550px;
+     margin-top: -40px;
+     
+   } 
+  
+  .footer-content { 
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  max-width: 1200px; 
+  margin: 70px auto; 
+  } 
+  
+  .footer-section { 
+  flex: 1; 
+  margin: 10px; 
+  min-width: 200px;
+   }
+  
+   .footer-section h1 { 
+  margin-bottom: 10px; 
+  background: linear-gradient(90.22deg, #098ADD 0.21%, #04D7BF 99.84%); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; /* Add this line */ 
+  }
+  
+   .footer-section h3 { 
+  margin-bottom: 10px; 
+  background: linear-gradient(90.22deg, #098ADD 0.21%, #04D7BF 99.84%); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; /* Add this line */ 
+  }
+  
+   .footer-section ul {
+   list-style: none; 
+  padding: 0; 
+  } 
+  
+  .footer-section ul li { 
+  margin: 5px 0;
+   }
+  
+   .footer-section ul li a { 
+  color: white; 
+  text-decoration: none; 
+  }
+   .footer-section ul li a:hover { 
+  text-decoration: underline; 
+  } 
+
+
+  /* media quires to make website responsive for all kind of devices\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+  
+ 
+@media (max-width: 725px) {
+  .side2 {
+    top: -1%; 
+    
+  }
+}
+ 
+@media (max-width: 430px){
+
+  .side1 {
+    right: -378px; 
+    top: -2%; 
+    
+  }
+}
+  @media (max-width: 340px){
+
+    .side1 {
+      right: -483px; 
+      top: 2%;
+    }
+  }
+
+  @media (max-width: 470px){
+
+.footer{
+
+  height: 670px;
+}
+  }
+
+  @media (max-width: 1000px){
+
+    .ltft {
+      margin: 0 39%;
+      font-family: Arial, sans-serif;
+      position: relative;
+      top: 200px;
+      z-index: 3;
+  }
+
+  }
+
+
+  @media (min-width: 1024px) and (max-width: 2040px) {
+    .lastlast {
+        background-color: #121F36;
+        margin: 0;
+        font-family: 'Gemunu Libre';
+        min-height: 20%;
+        position: relative;
+        z-index: 2;
+        margin-top: 200px;
+       
+    }
+    .ltft {
+      margin: 0 39%;
+      font-family: Arial, sans-serif;
+      position: relative;
+      top: 200px;
+      z-index: 3;
+  }
+    .footer{
+position: relative;
+      width: 108%;
+      z-index: 2;
+      
+      } 
+
+.side1{
+  position: absolute;
+  right: -100px;
+  top: -30%;
+  z-index: 1;
+  max-width: 100%;
+  }
+  
+  
+      .ltft {
+          margin: 0 39%;
+          font-family: Arial, sans-serif;
+          position: relative;
+          top: 200px;
+          z-index: 3;
+      }
+  }
+  
+
+
+  
+
+ 
+  @media (max-width: 495px){
+
+    header{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    }
+      }
+
+ 
+
+  @media (max-width: 528px){
+.ltft{
+margin: 0 18%;
+}
+
+.footer{
+
+width: 106%;
+
+}
+
+  }

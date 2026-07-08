@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+#loginbutton{
+    background-color: blue;
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
+margin-left: 10px;
+}
+.secondlastform{
+    margin-left: 30px;
+}
+
+header {
+    width: 97%;
+  background-color: #333;
+  padding: 10px ;
+  padding-top:7px ;
+  border-radius: 7px;
+  height: fit-content;
+ position:sticky;
+ top: 0;
+ margin-top: 5px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration:none;
+        font-size: 19px;
+        padding: 7px;
+      } 
+      nav ul li a:hover{
+text-decoration: underline;
+      }
+
+
+</style>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="../Mainpage.html">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="/login/FormS.html">Login</a></li>
+            <li><a href="/signup/form.html">Signup</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <h2>Registration Form</h2>
+   
+        <form>
+            
+                <div class="input-name">
+                <i class="fa fa-user lock" ></i>
+                <input type="text" placeholder="First-name" name="first-name" class="name"   required>
+                
+            <span>
+                <i class="fa fa-user lock" ></i>
+                <input type="text" placeholder="Last-name" name="last-name" class="name" required>
+            </span>
+        </div>
+            <div class="input-name">
+                <i class="fa fa-envelope email"></i>
+                <input type="email" placeholder="Email" name="email"  class="text-name" required>
+            </div>
+            <div class="input-name">
+                <i class="fa fa-lock lock"></i>
+                <input type="password" placeholder="Password" name="password" class="text-name" required>
+            </div>
+            <div class="input-name">
+                <i class="fa fa-lock lock"></i>
+                <input type="password" placeholder ="Confirm-password" name="confirm-password" class="text-name" required>
+            </div>
+            <div class="input-name">
+                <input type="radio" name="gender" value="male" class="radio-button" required>
+                <label style="margin-right: 30px;">Male</label>
+
+                <input type="radio" name="gender" value="female" class="radio-button"  required>
+                <label>Female</label>
+            </div>
+            <div  class="input-name">
+               
+                <select id="country" name="country" class="country-p"  required>
+                    <option value="Select a country">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Austrilla">Austrilla</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="China">China</option>
+                </select>
+                        <div class="arrow"></div>
+            </div>
+            <div class="input-name" >
+      
+                <input type="checkbox" id="terms" name="terms" class="check-button"   required>
+                <label  for="check-button" class="check">I Accept the terms and conditions</label>
+            </div>
+            <div class="input-name">
+                 <input   type="submit" class="button" value="Register" >
+            </div>
+
+            <div class="secondlastform">
+                <span style="font-size: 20px;"><b>|OR|</b></span>&nbsp;&nbsp;&nbsp;
+            <span style="font-size: 16px;"> Already Have an Account?</span>
+            <a href="/login/FormS.html" id="loginbutton">Login</a>
+         </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

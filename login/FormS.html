@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #lower{
+              background-color: blue;
+              padding: 8px;
+              border-radius: 8px;
+
+      }
+      .finallogin {
+        width: 97%;
+    
+        border: 3px solid white;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        padding: 20px ;
+        padding-top:7px ;
+        height: fit-content;
+        border-radius: 7px;
+         margin-bottom: 3%;
+        position:sticky;
+        top: 0;
+        margin-top: 5px;
+
+}
+
+    .beforeone{
+      margin-top: 105px;
+      margin-bottom: 75px;
+ 
+    }
+    .partlogin ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .partlogin ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    .partlogin ul li a {
+      color: white;
+      text-decoration:none;
+     word-spacing: 2px;
+     font-size: 20px;
+     padding: 7px;
+    } 
+    .partlogin ul li a:hover{
+text-decoration: underline;
+
+    }
+
+    #lower:hover{
+
+background-color: rgb(168, 102, 102);
+}
+
+  </style>
+</head>
+<body>
+
+
+  <div class="finallogin">
+      <div class="partlogin">
+          <ul>
+            <li><a href="../Mainpage.html">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="../login/FormS.html">Login</a></li>
+            <li><a href="../signup/form.html">Signup</a></li>
+          </ul>
+        </div>
+        </div>
+     
+<div class="beforeone">
+    <div class="one">
+    
+        <header>
+
+             <h2>Login</h2>
+
+            </header>
+
+             <form>
+                      <div class="second">
+                         
+                        <input type="text" id="input" required>
+                          <label for="input">Username</label>
+                          <i class="fa fa-user"></i>
+                      </div>
+
+                      <div class="second">
+                         
+                        <input type="password" id="password" required>
+                          <label for="password">Password</label>
+                          <i class="fa  fa-lock"></i>
+                      </div>
+
+                      <div class="remember_box">
+                            <div class="remember">
+                                      <input type="checkbox">Remember Me
+                            </div>
+                                  <a href="#">Forgot Password?</a>
+
+                      </div>
+                    <button  class="wer">Login</button>  
+
+                    <div class="signup"><span style="background-color: rgb(9, 112, 23); padding: 2px;border-radius: 5px;">Don't have an account ?</span> 
+                      <a href="../signup/form.html" id="lower">Signup</a> 
+                    </div>
+                  </div>
+
+             </form>
+
+             
+
+     
+
+
+    </div>
+</body>
+</html>
