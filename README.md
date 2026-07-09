@@ -110,6 +110,7 @@ To test the frontend visual layers on your local environment:
    ```bash
    git clone https://github.com/Muaz880/bulk-a-crypto-platform.git
    ```
+   
 2. Navigate directly into the root project directory in your terminal.
 
 3. Boot the environment inside your local browser:
