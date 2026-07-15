@@ -43,7 +43,7 @@ A dedicated historical dashboard leveraging identical card layout parameters mod
 
 The administrative core utilizes an advanced **Multi-Step Form Stepper Architecture** to isolate dense Web3 configuration parameters into distinct logical viewports:
 
-- **Vertical Stepper UI:** A dynamic right-margin tracker showing the user's current step within the form alongside intuitive Back/Next navigation. The 8 steps include:
+- **Vertical Stepper UI:** A dynamic right-margin tracker showing the user's current step within the form alongside intuitive Back/Next navigation. Designed an 8-step architecture for the full token sales flow:
   1. _Token information_
   2. _Referral percentage_
   3. _Sales information limit_
@@ -52,16 +52,18 @@ The administrative core utilizes an advanced **Multi-Step Form Stepper Architect
   6. _Vesting schedule_
   7. _Pancakeswap listing_
   8. _Additional information_
-- **Step 1 Viewport (Token Initialization Form):** Processes primary tracking data points through highly specialized alphanumeric text fields:
-  - `User-Token-Key` Input field.
-  - `Token Name` Input field.
-  - `Maximum` Input field.
-  - `Token address` Contract tracking input field.
-  - `Token symbol` Identification input field.
-  - `Token decimal` Precision specification input field.
-- **Step 3 Viewport (Sales Information Limit Form):** Integrates specialized control elements:
-  - Conditional binary logic handled via a **Custom CSS Toggle Switch** component labeled `Limit`.
-  - Contextual input arrays enabling exact configuration bounds for `Minimum` and `Maximum` allocation limits.
+
+  Steps 1 and 3 were implemented as fully functional pages to demonstrate the stepper pattern, state handling, and conditional logic that would extend across the remaining steps.
+- **Step 1 Viewport (Token Initialization Form) — Implemented:** Processes primary tracking data points through highly specialized alphanumeric text fields:
+  * `User-Token-Key` Input field.
+  * `Token Name` Input field.
+  * `Maximum` Input field.
+  * `Token address` Contract tracking input field.
+  * `Token symbol` Identification input field.
+  * `Token decimal` Precision specification input field.
+- **Step 3 Viewport (Sales Information Limit Form) — Implemented:** Integrates specialized control elements:
+  * Conditional binary logic handled via a **Custom CSS Toggle Switch** component labeled `Limit`.
+  * Contextual input arrays enabling exact configuration bounds for `Minimum` and `Maximum` allocation limits.
 
 ---
 
